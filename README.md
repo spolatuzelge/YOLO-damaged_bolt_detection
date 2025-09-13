@@ -1,4 +1,4 @@
-# YOLO Hasarlı Cıvata Tespit Sistemi - Kullanıcı Kılavuzu
+# YOLO Hasarlı Cıvata Tespit Sistemi
 
 ## 📋 İçindekiler
 1. [Kurulum](#kurulum)
