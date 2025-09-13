@@ -15,11 +15,10 @@
 ## 🚀 Kurulum
 
 ### Sistem Gereksinimleri
-- **İşletim Sistemi**: Windows 10/11, Ubuntu 20.04+, macOS 12+
+- **İşletim Sistemi**: Windows 10/11, Ubuntu 20.04+
 - **Python**: 3.8 veya üzeri
 - **RAM**: Minimum 8GB (16GB önerilen)
 - **GPU**: CUDA destekli (opsiyonel ama performans için önerilen)
-- **Disk**: 2GB boş alan
 - **Kamera**: USB kamera (canlı tespit için)
 
 ### Kurulum Adımları
@@ -33,7 +32,7 @@
 2. **Proje Dosyalarını İndirin**
    ```bash
    # Proje klasörüne gidin
-   cd civata_detection_system
+   cd YOLO-damaged_bolt_detection
    ```
 
 3. **Manuel Kurulum**
