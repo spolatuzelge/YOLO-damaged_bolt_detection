@@ -36,15 +36,9 @@
    cd civata_detection_system
    ```
 
-3. **Otomatik Kurulum (Önerilen)**
+3. **Manuel Kurulum**
    ```bash
-   # Kurulum scriptini çalıştırın
-   python scripts/setup.py
-   ```
-
-4. **Manuel Kurulum**
-   ```bash
-   # Virtual environment oluşturun (opsiyonel)
+   # Virtual environment oluşturun
    python -m venv venv
    
    # Virtual environment'ı aktifleştirin
@@ -66,12 +60,6 @@
 # Terminal/Command Prompt'da
 python main.py
 
-# Veya Windows'da
-start_app.bat
-
-# Veya Linux/Mac'te
-./start_app.sh
-```
 
 ### 2. İlk Yapılandırma
 - Uygulama açıldığında boş bir arayüz göreceksiniz
@@ -121,7 +109,7 @@ start_app.bat
 ```python
 # Model sınıfları şu şekilde olmalı:
 # 0: Hasarsız (Normal cıvata)
-# 1: Hasarlı (Defektli cıvata)
+# 1: Hasarlı (Kusurlu cıvata)
 ```
 
 ---
@@ -233,12 +221,21 @@ ID:3 → Yeni nesne takibe alındı
   - Hata mesajları
   - Performans metrikleri
 
-### İstatistik Takibi
+---
+## 🛠️ Sorun Giderme
+### Yaygın Sorunlar ve Çözümler
+| Sorun                          | Olası Sebep                        | Çözüm                                  |
+|-------------------------------|-----------------------------------|---------------------------------------|
+| Uygulama açılmıyor            | Python veya bağımlılıklar eksik    | Kurulum adımlarını tekrar gözden geçirin |
+| Kamera algılanmıyor           | Kamera bağlı değil veya ID yanlış  | Kamerayı kontrol edin, doğru ID girin |
+| Model yüklenmiyor             | Desteklenmeyen format              | `.pt` veya `.onnx` formatında model kullanın |
+| Düşük FPS                     | Yüksek çözünürlük veya çoklu kaynak | Kaynak sayısını azaltın, çözünürlüğü düşürün |
+| Hasarlı cıvata tespit edilmiyor | Güven eşiği çok yüksek          | Güven eşiğini düşürün (%50-60 önerilen) |
+| Kayıt dosyaları oluşturulmuyor | Yazma izinleri yok                 | Klasör izinlerini kontrol edin        |
+| Uygulama çöküyor              | Bellek yetersiz veya hata          | Sistem kaynaklarını artırın, logları kontrol edin |
 
-#### Gerçek Zamanlı Metrikler
-- **Çalışma Süresi**: HH:MM:SS formatında
-- **Toplam Tespit**: Tüm nesneler (hasarlı + hasarsız)
-- **Hasarlı Tespit**: Sadece defektli cıvatalar
-- **Kaydedilen**: Başarıyla kaydedilen görüntü sayısı
-- **FPS**: Saniyedeki frame sayısı
-- **İşlem Yükü**:
+
+Tüm katkılar için teşekkürler!
+## 📧 İletişim
+Herhangi bir sorunuz veya geri bildiriminiz için bizimle iletişime geçmekten çekinmeyin:
+- **E-posta**: [polat.zlg@gmail.com](mailto:polat.zlg@gmail.com)
