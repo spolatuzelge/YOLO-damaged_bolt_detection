@@ -58,7 +58,7 @@
 ```bash
 # Terminal/Command Prompt'da
 python main.py
-
+```
 
 ### 2. İlk Yapılandırma
 - Uygulama açıldığında boş bir arayüz göreceksiniz
